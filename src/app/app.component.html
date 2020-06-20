@@ -1,23 +1,11 @@
-<p>
-  Material Tabs
-</p>
+<div class="container center">
+  <a class="brand">3-2-1-GoCheck</a>
+  <p class="job-title"> IT Manager </p>
+  <p class="job-desc"> IT  -  London, England, United Kingdom  -  Full time</p>
+</div>
 
-<mat-toolbar>
-  Get the change event!
-</mat-toolbar>
-<mat-tab-group style="margin-bottom: 20px;" #changeEvent (selectedIndexChange)="tabChanged($event)">
-  <mat-tab label="Tab 1">Tab 1</mat-tab>
-  <mat-tab label="Tab 2">Tab 2</mat-tab>
+<mat-tab-group mat-stretch-tabs style="margin-bottom: 20px;" #changeEvent (selectedIndexChange)="tabChanged($event)">
+  <mat-tab  label="Overview">Tab 1</mat-tab>
+  <mat-tab label="Application">Tab 2</mat-tab>
 </mat-tab-group>
-
-
-<mat-toolbar>
-  Get the tabs
-</mat-toolbar>
-<mat-tab-group #allTabs>
-  <mat-tab label="Tab 1">Tab 1</mat-tab>
-  <mat-tab label="Tab 2">Tab 2</mat-tab>
-  <mat-tab label="Tab 3">Tab 3</mat-tab>
-</mat-tab-group>
-
 
