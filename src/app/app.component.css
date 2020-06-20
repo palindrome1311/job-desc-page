@@ -20,3 +20,11 @@
   font-weight:500;
   color:darkgrey;
 }
+.w-80{
+  width: 80%;
+  margin:auto;
+}
+h4,p{
+  font-family: sans-serif;
+  color:darkslategrey;
+}
