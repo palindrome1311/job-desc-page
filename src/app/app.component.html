@@ -6,20 +6,32 @@
 <div class="w-80" >
 <mat-tab-group mat-stretch-tabs #changeEvent (selectedIndexChange)="tabChanged($event)">
   <mat-tab  label="Overview">
-    <div style="background-color:grey;">
+    <mat-card>
     <h4>Description</h4>
     <p>
       As Yoti's IT Manager, you will be responsible for running a lean IT department supporting our teams with all their IT requirements, building and supporting in house office IT in multiple locations and supporting users with normal IT support tasks.
     <br><br>
       We're looking for a highly skilled engineer who has proven experience with IT support on systems running Linux, MacOS and Windows. The role includes keeping our office environments and workstations secure, assisting users with their day to day IT related challenges, maintaining IT owned backend systems such as simple databases and standard IT applications. You will also own various controls that relate to our SOC2 and ISO27001 programs.
     </p>
-    <h4>In this role your reeponsibilities will be:</h4>
-    <p>
-      As Yoti's IT Manager, you will be responsible for running a lean IT department supporting our teams with all their IT requirements, building and supporting in house office IT in multiple locations and supporting users with normal IT support tasks.
-    <br><br>
-      We're looking for a highly skilled engineer who has proven experience with IT support on systems running Linux, MacOS and Windows. The role includes keeping our office environments and workstations secure, assisting users with their day to day IT related challenges, maintaining IT owned backend systems such as simple databases and standard IT applications. You will also own various controls that relate to our SOC2 and ISO27001 programs.
-    </p>
-    </div>
+    <h4>In this role your responsibilities will be:</h4>
+        <div class="bullet-list">
+        <ul>
+          <li *ngFor="let item of responsibilities">{{item}}</li>
+        </ul>
+      </div>
+
+     <h4>Requirements:</h4>
+        <div class="bullet-list">
+        <ul>
+          <li *ngFor="let item of requirements">{{item}}</li>
+        </ul>
+      </div>
+
+     <h4>We believe in equal opportunities</h4>
+        <p>
+          It takes a diverse community of passionate, talented and committed people to build a simpler, more secure way of proving identity. We’re an equal opportunity employer, so we welcome applications from people of all backgrounds, with different outlooks and experiences.
+        </p>
+    </mat-card>
   </mat-tab>
   <mat-tab label="Application">Tab 2</mat-tab>
 </mat-tab-group>

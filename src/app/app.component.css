@@ -21,10 +21,13 @@
   color:darkgrey;
 }
 .w-80{
-  width: 80%;
+  width: 50%;
   margin:auto;
 }
-h4,p{
+h4,p,li{
   font-family: sans-serif;
   color:darkslategrey;
+}
+li{
+  line-height: 1.5;
 }

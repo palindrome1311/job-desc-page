@@ -7,7 +7,20 @@ import {MatTabGroup} from '@angular/material'
   styleUrls: [ './app.component.css' ]
 })
 export class AppComponent implements OnInit, AfterViewInit  {
-  name = 'Angular 6';
+    responsibilities = ['Supervising IT department staff, including training and performance management', 
+    'Supervising IT department staff, including training and performance management', 
+    'Supervising IT department staff, including training and performance management',
+    'Supervising IT department staff, including training and performance management', 
+    'Supervising IT department staff, including training and performance management', 
+    'Supervising IT department staff, including training and performance management',]
+    
+    requirements = ['Proven experience of running MacOS at scale', 
+    'Proven experience of running MacOS at scale', 
+    'Proven experience of running MacOS at scale',
+    'Proven experience of running MacOS at scale', 
+    'Proven experience of running MacOS at scale', 
+    'Proven experience of running MacOS at scale',]
+  
 
   ngOnInit() {
     // this.getTabs();
